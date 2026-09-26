@@ -1,0 +1,9 @@
+employee_id,name,department,role,location,email,joining_date
+HC1001,Aarav Sharma,Information Technology,Software Engineer,Noida,aarav.sharma@example.com,2024-06-10
+HC1002,Riya Mehta,Human Resources,HR Executive,Noida,riya.mehta@example.com,2023-08-21
+HC1003,Karan Verma,Finance,Finance Analyst,Noida,karan.verma@example.com,2024-01-15
+HC1004,Neha Singh,Information Technology,Data Analyst,Noida,neha.singh@example.com,2025-02-03
+HC1005,Aditya Kumar,Operations,Operations Associate,Noida,aditya.kumar@example.com,2023-11-13
+HC1006,Priya Gupta,Compliance,Compliance Analyst,Noida,priya.gupta@example.com,2024-09-02
+HC1007,Rohan Malhotra,Information Technology,Cloud Engineer,Noida,rohan.malhotra@example.com,2025-01-20
+HC1008,Simran Kaur,Administration,Admin Executive,Noida,simran.kaur@example.com,2024-04-08

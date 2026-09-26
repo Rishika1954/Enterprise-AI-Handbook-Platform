@@ -1,0 +1,44 @@
+HCL CAPITAL — EMPLOYEE HANDBOOK
+Demo handbook for the Enterprise AI Employee application.
+
+## Working Hours
+Standard working hours are generally 9:30 AM to 6:30 PM, Monday to Friday. Employees should follow their team's attendance and shift instructions. Flexible or hybrid arrangements depend on the role and manager approval.
+
+## Leave Policy
+Employees should apply for leave through the approved internal leave process before taking planned leave. Emergency or sick leave should be communicated to the reporting manager as soon as possible. Leave approval depends on eligibility, team requirements and company policy.
+
+## Work From Home and Hybrid Work
+Hybrid or work-from-home arrangements are role dependent. Employees must follow approved schedules, remain reachable during working hours and protect company information while working remotely.
+
+## Attendance
+Employees are expected to maintain regular attendance and update attendance records using the approved company system. Repeated attendance issues may be reviewed by the reporting manager and HR.
+
+## Payroll
+Salary is normally processed according to the organization's monthly payroll cycle. Questions about salary, deductions, tax documents or payslips should be raised with the authorized HR or payroll team.
+
+## Benefits
+Eligible employees may receive benefits according to company policy and applicable employment terms. Employees should check the official benefits communication for eligibility, enrollment and claim procedures.
+
+## IT Support
+For laptop, software, access, password or network problems, employees should raise a ticket with the IT support team or use the approved service desk. Do not share passwords or authentication codes with anyone.
+
+## Information Security
+Employees must protect company data, use approved systems and avoid sharing confidential information through personal accounts or unauthorized applications. Suspicious emails, links or security incidents should be reported to the IT/security team.
+
+## Code of Conduct
+Employees are expected to behave professionally, respectfully and ethically. Harassment, discrimination, misuse of company resources and unauthorized disclosure of confidential information are not acceptable.
+
+## Performance and Feedback
+Employees may receive regular feedback from managers. Performance discussions can cover goals, responsibilities, development needs and future learning plans.
+
+## Learning and Development
+Employees are encouraged to improve job-related skills through approved training, internal learning resources and relevant professional development programs.
+
+## Grievance and HR Support
+Employees with workplace concerns can contact the appropriate HR representative or use the organization's approved grievance process. Concerns should be communicated respectfully and through official channels.
+
+## Emergency and Safety
+Employees should follow workplace safety instructions and emergency procedures. In an emergency, contact the appropriate local emergency service and notify the organization through the established process when safe to do so.
+
+NOTE
+This demo handbook is for an academic/project demonstration. It does not replace official company policies, employment contracts, HR communications or legal requirements.

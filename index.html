@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HCL Capital — Enterprise AI Employee</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><rect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%230A1420%22/><text x=%228%22 y=%2211.5%22 font-size=%228%22 text-anchor=%22middle%22 fill=%22%23C9A227%22 font-family=%22serif%22>H</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">HC</div>
+      <div class="brandtext">
+        <b>HCL Capital</b>
+        <span>Enterprise AI Employee</span>
+      </div>
+    </div>
+    <nav class="navlist">
+      <button class="nav active" data-tab="home" onclick="showTab('home',this)">
+        <svg viewBox="0 0 20 20"><path d="M3 10.5 10 4l7 6.5M5 9v7h10V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Dashboard
+      </button>
+      <button class="nav" data-tab="assistant" onclick="showTab('assistant',this)">
+        <svg viewBox="0 0 20 20"><path d="M4 5h12v8H9l-3 3v-3H4V5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        AI Employee
+      </button>
+      <button class="nav" data-tab="employees" onclick="showTab('employees',this)">
+        <svg viewBox="0 0 20 20"><circle cx="7.5" cy="7" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2.8 16c.5-3 2.3-4.6 4.7-4.6s4.2 1.6 4.7 4.6M13 8a2.4 2.4 0 1 0 0-4.8M13.2 11.5c2 .2 3.4 1.7 3.8 4.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Employees
+      </button>
+      <button class="nav" data-tab="handbook" onclick="showTab('handbook',this)">
+        <svg viewBox="0 0 20 20"><path d="M4 4.5h5.5V16H4a1 1 0 0 1-1-1V5.5A1 1 0 0 1 4 4.5zM16 4.5h-5.5V16H16a1 1 0 0 0 1-1V5.5a1 1 0 0 0-1-1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Handbook
+      </button>
+    </nav>
+    <div class="sidefoot">
+      <span class="dot"></span> System online
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <h1 id="pageTitle">Dashboard</h1>
+        <p id="pageSub">Overview of your workplace assistant</p>
+      </div>
+    </header>
+
+    <!-- ============ DASHBOARD ============ -->
+    <section id="home" class="tab">
+      <div class="hero">
+        <div class="hero-copy">
+          <h2>Ask anything in the employee handbook.</h2>
+          <p>Leave, working hours, payroll, IT support, security and conduct — answered instantly from HCL Capital's official handbook, no waiting on HR.</p>
+          <button class="btn-gold" onclick="showTab('assistant', document.querySelector('[data-tab=assistant]'))">Ask the AI Employee</button>
+          <div class="hero-stats">
+            <div><b id="statEmployees">—</b><span>Employees</span></div>
+            <div><b id="statSections">—</b><span>Policy sections</span></div>
+            <div><b>24 / 7</b><span>Availability</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 220 220">
+            <rect x="34" y="26" width="152" height="168" rx="6" fill="#0F1C2C" stroke="#2A3E56"/>
+            <line x1="52" y1="58" x2="168" y2="58" stroke="#C9A227" stroke-width="2"/>
+            <line x1="52" y1="80" x2="168" y2="80" stroke="#2A3E56" stroke-width="1.5"/>
+            <line x1="52" y1="98" x2="150" y2="98" stroke="#2A3E56" stroke-width="1.5"/>
+            <line x1="52" y1="116" x2="168" y2="116" stroke="#2A3E56" stroke-width="1.5"/>
+            <line x1="52" y1="134" x2="140" y2="134" stroke="#2A3E56" stroke-width="1.5"/>
+            <circle cx="150" cy="158" r="26" fill="#0A1420" stroke="#2FA6A2" stroke-width="2"/>
+            <path d="M141 158h18M150 149v18" stroke="#2FA6A2" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Quick questions</h3>
+        <div class="quick">
+          <button onclick="askQuick('What are the working hours?')">Working hours</button>
+          <button onclick="askQuick('How do I apply for leave?')">Leave policy</button>
+          <button onclick="askQuick('How do I contact IT support?')">IT support</button>
+          <button onclick="askQuick('What are the information security rules?')">Security</button>
+          <button onclick="askQuick('How is payroll processed?')">Payroll</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Departments</h3>
+        <div id="deptBars" class="deptbars"></div>
+      </div>
+    </section>
+
+    <!-- ============ ASSISTANT ============ -->
+    <section id="assistant" class="tab hidden">
+      <div class="assistant">
+        <div class="chatHead">
+          <div class="aiAvatar">
+            <svg viewBox="0 0 20 20"><path d="M4 5h12v8H9l-3 3v-3H4V5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h2>AI Employee Assistant</h2>
+            <p>Answers are sourced from the employee handbook, with a match confidence shown on each reply</p>
+          </div>
+        </div>
+        <div id="messages" class="messages">
+          <div class="msg bot">
+            <b>AI Employee</b>
+            <p>Hello — ask me about leave, working hours, payroll, IT support, attendance, benefits or company policy.</p>
+          </div>
+        </div>
+        <div class="inputRow">
+          <input id="question" placeholder="Ask your employee question…" onkeydown="if(event.key==='Enter') ask()">
+          <button onclick="ask()">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMPLOYEES ============ -->
+    <section id="employees" class="tab hidden">
+      <div class="section">
+        <h2>Employee directory</h2>
+        <input id="search" class="search" placeholder="Search by name, role, location or email…" oninput="renderEmployees()">
+        <div id="deptChips" class="chips"></div>
+        <div id="employeeGrid" class="employeeGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ HANDBOOK ============ -->
+    <section id="handbook" class="tab hidden">
+      <div class="handbookLayout">
+        <div class="handbookIndex">
+          <h3>Contents</h3>
+          <div id="handbookNav"></div>
+        </div>
+        <div class="section handbookBody">
+          <h2>Employee Handbook</h2>
+          <p class="muted">Browse the full text below, or ask the AI Employee for a direct answer.</p>
+          <div id="handbookText" class="hb-body">Loading…</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
